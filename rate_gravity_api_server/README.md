@@ -10,7 +10,7 @@ This is a nodejs REST server connect to rategravity AWS server with hidden keys.
 $ npm install
 ```
 
-2. Open up `.env` file and your own API_KEY
+2. Open up `.env` file and add your own API_KEY
 `API=[YOUR_API_KEY]`
 
 3. Start the server
