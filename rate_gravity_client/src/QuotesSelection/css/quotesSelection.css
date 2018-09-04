@@ -1,0 +1,79 @@
+.quote_selection__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.quote_selection__query-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.quote_selection__query-left, .quote_selection__query-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote_selection__query-left {
+  padding-right: 10px;
+}
+
+.quote_selection__query-right {
+  padding-left: 10px;
+}
+
+.quote_selection__input-container, .quote_selection__dropdown-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.quote_selection__input, .quote_selection__input-error, .quote_selection__dropdown-container button {
+  width: 380px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quote_selection__input-error {
+  border-color: red;
+}
+
+.quote_selection__get-quote {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 70px;
+}
+
+.quote_selection__get-quote button {
+  width: 380px;
+}
+
+@media only screen and (max-width: 768px) {
+  .quote_selection__query-container {
+    flex-direction: column;
+  }
+  .quote_selection__query-left, .quote_selection__query-right {
+    padding: 0;
+  }
+  .quote_selection__input-container, .quote_selection__dropdown-container {
+    flex-direction: column;
+    align-items: space-around;
+    margin-top: 15px;
+  }
+  .quote_selection__input-container input, .quote_selection__dropdown-container input {
+    margin-top: 15px;
+  }
+  .quote_selection__input, .quote_selection__input-error {
+    width: 100%;
+  }
+  .quote_selection__get-quote {
+    justify-content: center;
+  }
+}
