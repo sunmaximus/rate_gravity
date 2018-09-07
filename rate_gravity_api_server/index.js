@@ -38,8 +38,8 @@ app.get('/ratequotes/:id', async function(req, res) {
   console.log('Test', id);
   try {
     const getQuotes = await axios.get(`${url}?requestId=${id}`, axiosConfig)
-    console.log(getQuotes.data.rateQuotes)
-    res.send(getQuotes.data.rateQuotes)
+    // console.log(getQuotes.data.rateQuotes)
+    res.send(getQuotes.data)
   } catch (e) {
     console.error(e);
   } 

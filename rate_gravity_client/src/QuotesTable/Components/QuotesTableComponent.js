@@ -29,25 +29,29 @@ class QuotesTableComponent extends Component {
   }
 
   render() {
-    if (this.props.loading) {
-      return (<div className='quote-table__loading-container'><img src={loadingSVG} /></div>);
-    }
+    // if (this.props.loading) {
+    //   return (<div className='quote-table__loading-container'><img src={loadingSVG} /></div>);
+    // }
     return (
-      <Table>
-        <thead>
-          <tr>
-            <th>Lender Name</th>
-            <th>Loan Type</th>
-            <th>Interest Rate</th>
-            <th>Closing Costs</th>
-            <th>Monthly Payment</th>
-            <th>APR</th>
-          </tr>
-        </thead>
-        <tbody>
-          {this.renderTableRow()}
-        </tbody>
-      </Table>
+      <div>
+        <Table>
+          <thead>
+            <tr>
+              <th>Lender Name</th>
+              <th>Loan Type</th>
+              <th>Interest Rate</th>
+              <th>Closing Costs</th>
+              <th>Monthly Payment</th>
+              <th>APR</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.renderTableRow()}
+          </tbody>
+        </Table>
+        {this.props.loading && <div className='quote-table__loading-container'><img src={loadingSVG} /></div>}     
+      </div>
+
     );
   }
 }
